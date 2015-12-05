@@ -14,7 +14,7 @@
 
 ## Usage
 
-`$ python Open163Parser.py -c <course_url>`。
+`$ python Open163Parser.py -c <course_url>`
 
 这里的 URL 需要是课程主页的 URL。例如 http://open.163.com/special/opencourse/ios7.html. 
 
@@ -26,4 +26,6 @@
 
 下载视频的中英字幕文件。
 
-`$ python Open163Parser.py -r VIDEO_FOLDER`，视频下载完成后，文件名不是视频名而是杂乱的字符串，这时候使用此命令给出视频文件夹的路径，来将视频重命名。
+`$ python Open163Parser.py -r VIDEO_FOLDER`
+
+视频下载完成后，文件名不是视频名而是杂乱的字符串，这时候使用此命令给出视频文件夹的路径，来将视频重命名。
