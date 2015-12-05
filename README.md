@@ -16,12 +16,14 @@
 
 `$ python Open163Parser.py -c <course_url>`。
 
-这里的 URL 需要是课程主页的 URL。例如 http://v.163.com/special/opencourse/ios7.html。
+这里的 URL 需要是课程主页的 URL。例如 http://open.163.com/special/opencourse/ios7.html. 
 
 视频的 URL 会写到当前目录的 `urls.txt` 文件中，复制到迅雷就可以下载了。
 
 视频的完整信息，包括名字、视频URL、字幕URL，会写到当前目录的 `videoList.json` 中，主要是为了下面两个操作使用。想要做别的事情可以直接读这个文件。
 
-`-s` 选项可以下载字幕文件。
+`$ python Open163Parser.py -s`
 
-视频下载完成后，文件名不是视频名而是杂乱的字符串，这时候使用 `$ python Open163Parser.py -r VIDEO_FOLDER`，给出视频文件夹的路径，来将视频重命名。
+下载视频的中英字幕文件。
+
+`$ python Open163Parser.py -r VIDEO_FOLDER`，视频下载完成后，文件名不是视频名而是杂乱的字符串，这时候使用此命令给出视频文件夹的路径，来将视频重命名。
